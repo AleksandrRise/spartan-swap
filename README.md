@@ -7,3 +7,17 @@ Spartan Swap is a web app for **San José State University students** to find th
 
 ## Why Spartan Swap?
 Getting the right classes at SJSU can be stressful—waitlists move slowly, schedules conflict, and the “perfect section” disappears instantly. Spartan Swap is designed to make student-to-student class exchanging **simple, fast, and organized**.
+
+## What You Can Do
+### ✅ Core Features
+- **Browse “SwappingPlace” listings** of available classes and swap opportunities
+- **Post what you have / what you need**
+- **Request swaps** with one click
+- **Accept / decline swap requests**
+- **In-app chat** to coordinate details quickly
+- **Profile dashboard** to manage:
+  - Your posted classes
+  - Active swap requests
+  - Completed swaps
+  - Edit / delete listings
+- **Contact page** for support / feedback
