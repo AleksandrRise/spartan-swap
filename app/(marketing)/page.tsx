@@ -1,4 +1,4 @@
-import LandingLogo from "@/components/LandingLogo"
+import LandingLogo from "@/components/landing/LandingLogo"
 
 export default function Home() {
     return (
