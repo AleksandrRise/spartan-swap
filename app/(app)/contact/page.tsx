@@ -1,3 +1,7 @@
-export default function page() {
-    return <h1>Hi</h1>
+import LandingLogo from "@/components/LandingLogo"
+
+export default function Contact() {
+    return (
+        <h1></h1>
+    )
 }

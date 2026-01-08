@@ -1,5 +1,9 @@
+import LandingLogo from "@/components/LandingLogo"
+
 export default function Home() {
-  return (
-    <h1></h1>
-  );
+    return (
+        <main>
+            <LandingLogo />
+        </main>
+    )
 }
