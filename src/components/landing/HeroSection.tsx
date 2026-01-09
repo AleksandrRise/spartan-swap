@@ -5,7 +5,7 @@ export default function HeroSection() {
   const textWrapperClasses = "text-8xl leading-tight"
   const textNormalClasses = "font-light"
   const textBoldClasses = "font-bold"
-  const btnClasses = "mt-8 bg-blue-700 text-white rounded px-7 py-3.5 font-medium hover:bg-blue-800 cursor-pointer"
+  const btnClasses = "mt-8 bg-primary text-white px-9.5 py-4.5 text-2xl font-bold cursor-pointer"
   const bottomTextClasses = "mt-8 text-gray-900 font-semibold"
 
   return (
