@@ -2,8 +2,8 @@ export default function HeroSection() {
 
   // Classes
   const wrapperClasses = "p-10"
-  const textWrapperClasses = "text-6xl leading-tight"
-  const textNormalClasses = "font-normal"
+  const textWrapperClasses = "text-8xl leading-tight"
+  const textNormalClasses = "font-light"
   const textBoldClasses = "font-bold"
   const btnClasses = "mt-8 bg-blue-700 text-white rounded px-7 py-3.5 font-medium hover:bg-blue-800 cursor-pointer"
   const bottomTextClasses = "mt-8 text-gray-900 font-semibold"
@@ -27,7 +27,7 @@ export default function HeroSection() {
       <p className={bottomTextClasses}>
         Get the classes you need.
       </p>
-      
+
     </section>
   );
 };
