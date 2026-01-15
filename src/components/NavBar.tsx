@@ -1,6 +1,13 @@
 import Image from "next/image"
 
 export default function NavBar() {
+    
+    const NAV = [
+        { href: "/", label: "Home" },
+        { href: "/swaps", label: "Swaps" },
+        { href: "/swapping-place", label: "SwappingPlace" },
+        { href: "/contact", label: "Contact Us" },
+    ];
 
     // Classes
     const logoSrc = "/images/logo-white.png"
