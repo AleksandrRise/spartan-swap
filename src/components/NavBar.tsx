@@ -10,13 +10,14 @@ export default function NavBar() {
     ];
 
     // Classes
-    const linksListClasses = ""
+    const navClasses = "flex justify-between"
+    const linksListClasses = "flex gap-5"
     const logoSrc = "/images/logo-white.png"
     const logoAlt = "Logo"
     const profileLink = ""
 
     return (
-        <nav>
+        <nav className={navClasses}>
             <Image src={logoSrc} alt={logoAlt} width={22.5} height={22.5} />
 
             <ul className={linksListClasses}>
