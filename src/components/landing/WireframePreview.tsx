@@ -38,8 +38,8 @@ export default function WireframePreview() {
       `}</style>
 
       <div className={containerClasses}>
-        <Column blocks={column1Blocks} direction="up" duration={20} />
-        <Column blocks={column2Blocks} direction="down" duration={25} />
+        <Column blocks={column1Blocks} direction="up" duration={25} />
+        <Column blocks={column2Blocks} direction="down" duration={35} />
       </div>
     </>
   );

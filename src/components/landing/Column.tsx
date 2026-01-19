@@ -12,7 +12,7 @@ export default function Column({ blocks, direction, duration = 25 }: ColumnType)
     const columnClasses = "flex-1 overflow-hidden";
     const columnInnerClasses = "flex flex-col gap-3";
 
-    const allBlocks = [...blocks, ...blocks];
+    const allBlocks = [...blocks, ...blocks, ...blocks];
 
     return (
     <div className={columnClasses}>
