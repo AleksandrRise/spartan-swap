@@ -1,61 +1,46 @@
-import React from "react";
+import Column from "./Column";
 
-// Class constants
-const containerClasses = "relative overflow-hidden h-screen";
-const columnsWrapperClasses = "flex gap-4 rotate-12 origin-top-left translate-x-16 -translate-y-8";
-const leftColumnClasses = "flex flex-col gap-3 animate-scroll-up";
-const rightColumnClasses = "flex flex-col gap-3 animate-scroll-down";
-const cardClasses = "bg-white border border-gray-200 rounded-md px-4 py-6 w-48 shadow-sm";
-const cardLabelClasses = "text-gray-400 text-xs font-medium tracking-wide";
+export default function WireframePreview() {
 
-// Data constants
-const leftColumnData = [
-  "HERO SPOT",
-  "INTRODUCTORY CONTENT + 3 MAIN FEATURE",
-  "ONE TESTIMONIAL",
-  "BENEFITS",
-  "REINFORCEMENT STATEMENT",
-  "FEATURES",
-  "THE CLOSING STATEMENT",
-];
+  // Classes
+  const containerClasses = "w-1/2 h-screen overflow-hidden flex gap-3 p-4";
 
-const rightColumnData = [
-  "HERO SPOT",
-  "FORM",
-  "CTA",
-  "INTRODUCTORY CONTENT + 3 MAIN FEATURE",
-  "ONE TESTIMONIAL",
-  "BENEFITS",
-  "REINFORCEMENT STATEMENT",
-  "FEATURES",
-  "THE CLOSING STATEMENT",
-  "FOOTER",
-];
+  const column1Blocks: string[] = [
+    "HERO SPOT",
+    "INTRODUCTORY CONTENT\n+ 3 MAIN FEATURE",
+    "ONE TESTIMONIAL",
+    "BENEFITS",
+    "REINFORCEMENT STATEMENT",
+    "FEATURES",
+    "THE CLOSING",
+  ];
 
-const WireframePreview: React.FC = () => {
-  const Card = ({ label }: { label: string }) => (
-    <div className={cardClasses}>
-      <span className={cardLabelClasses}>{label}</span>
-    </div>
-  );
+  const column2Blocks: string[] = [
+    "FORM",
+    "CTA",
+    "BENEFITS",
+    "REINFORCEMENT STATEMENT",
+    "FEATURES",
+    "THE CLOSING STATEMENT",
+  ];
 
   return (
-    <div className={containerClasses}>
-      <div className={columnsWrapperClasses}>
-        <div className={leftColumnClasses}>
-          {[...leftColumnData, ...leftColumnData].map((label, index) => (
-            <Card key={index} label={label} />
-          ))}
-        </div>
+    <>
+      <style>{`
+        @keyframes scroll-up {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-50%); }
+        }
+        @keyframes scroll-down {
+          0% { transform: translateY(-50%); }
+          100% { transform: translateY(0); }
+        }
+      `}</style>
 
-        <div className={rightColumnClasses}>
-          {[...rightColumnData, ...rightColumnData].map((label, index) => (
-            <Card key={index} label={label} />
-          ))}
-        </div>
+      <div className={containerClasses}>
+        <Column blocks={column1Blocks} direction="up" duration={20} />
+        <Column blocks={column2Blocks} direction="down" duration={25} />
       </div>
-    </div>
+    </>
   );
 };
-
-export default WireframePreview;
