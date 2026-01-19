@@ -3,7 +3,7 @@ import Column from "./Column";
 export default function WireframePreview() {
 
   // Classes
-  const containerClasses = "w-3/4 h-[140vh] -mt-[20vh] overflow-hidden flex gap-10 z-2 rotate-15";
+  const containerClasses = "h-[140vh] -mt-[20vh] overflow-hidden flex gap-10 z-2 rotate-15";
 
   const column1Blocks: string[] = [
     "HERO SPOT",

@@ -5,9 +5,9 @@ import WireframePreview from "@/components/landing/WireframePreview";
 export default function Home() {
 
   // Classes
-  const mainClasses = "flex justify-center items-center"
+  const mainClasses = "flex justify-between items-center overflow-hidden"
   const logoClasses = "w-1/2 p-10"
-  const wireframeClasses = "w-1/2 overflow-hidden"
+  const wireframeClasses = "w-3/7"
 
   return (
 
