@@ -1,7 +1,8 @@
 import Block from "./Block";
+import type { BlockType } from "./BlockType";
 
 type ColumnType = {
-    blocks: string[],
+    blocks: BlockType[],
     direction: string,
     duration: number
 }
@@ -22,8 +23,8 @@ export default function Column({ blocks, direction, duration = 25 }: ColumnType)
                 animation: `scroll-${direction} ${duration}s linear infinite`,
             }}
         >
-            {allBlocks.map((label, index) => (
-                <Block key={`${label}-${index}`} label={label} />
+            {allBlocks.map((block, index) => (
+                <Block key={`${block.imgSrc}-${index}`} imgSrc={block.imgSrc} imgAlt={block.imgAlt} />
             ))}
         </div>
     </div>

@@ -1,27 +1,19 @@
 import Column from "./Column";
+import type { BlockType } from "./BlockType";
 
 export default function WireframePreview() {
 
   // Classes
   const containerClasses = "h-[140vh] -mt-[20vh] overflow-hidden flex gap-10 z-2 rotate-15";
 
-  const column1Blocks: string[] = [
-    "HERO SPOT",
-    "INTRODUCTORY CONTENT\n+ 3 MAIN FEATURE",
-    "ONE TESTIMONIAL",
-    "BENEFITS",
-    "REINFORCEMENT STATEMENT",
-    "FEATURES",
-    "THE CLOSING",
+  const column1Blocks: BlockType[] = [
+    { imgSrc : "/images/feature-1.png", imgAlt : "Swap Image"},
+    { imgSrc : "/images/feature-2.png", imgAlt : "Swap Image"},
   ];
 
-  const column2Blocks: string[] = [
-    "FORM",
-    "CTA",
-    "BENEFITS",
-    "REINFORCEMENT STATEMENT",
-    "FEATURES",
-    "THE CLOSING STATEMENT",
+  const column2Blocks: BlockType[] = [
+    { imgSrc : "/images/feature-1.png", imgAlt : "Swap Image"},
+    { imgSrc : "/images/feature-2.png", imgAlt : "Swap Image"},
   ];
 
   return (
