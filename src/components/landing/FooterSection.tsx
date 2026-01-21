@@ -1,7 +1,7 @@
 export default function FooterSection() {
 
     // Classes
-    const bottomTextClasses = "font-medium text-3xl opacity-87"
+    const bottomTextClasses = "font-medium text-2xl opacity-87"
 
     return (
       <p className={bottomTextClasses}>

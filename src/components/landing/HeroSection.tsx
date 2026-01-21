@@ -1,7 +1,7 @@
 export default function HeroSection() {
 
   // Classes
-  const wrapperClasses = "py-10"
+  const wrapperClasses = "my-20"
   const textWrapperClasses = "text-8xl leading-tight opacity-87 font-display"
   const textNormalClasses = "font-light"
   const textBoldClasses = "font-bold"
