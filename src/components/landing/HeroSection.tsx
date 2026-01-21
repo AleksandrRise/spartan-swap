@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function HeroSection() {
 
   // Classes
@@ -18,9 +20,11 @@ export default function HeroSection() {
       </h1>
 
       {/* Blue Button */}
-      <button className={btnClasses}>
-        Begin Now
-      </button>
+      <Link href="/swapping-place" passHref>
+        <button className={btnClasses}>
+          Begin Now
+        </button>      
+      </Link>
 
     </section>
   );
