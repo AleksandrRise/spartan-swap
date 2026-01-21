@@ -7,13 +7,21 @@ export default function WireframePreview() {
   const containerClasses = "h-[140vh] -mt-[20vh] overflow-hidden flex gap-10 z-2 rotate-15";
 
   const column1Blocks: BlockType[] = [
-    { imgSrc : "/images/feature-1.png", imgAlt : "Swap Image"},
-    { imgSrc : "/images/feature-2.png", imgAlt : "Swap Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
   ];
 
   const column2Blocks: BlockType[] = [
-    { imgSrc : "/images/feature-1.png", imgAlt : "Swap Image"},
-    { imgSrc : "/images/feature-2.png", imgAlt : "Swap Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
+    { imgSrc : "/images/placeholder.svg", imgAlt : "Placeholder Image"},
   ];
 
   return (
