@@ -1,31 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+
+  /* Colors */
   --color-primary: #0055A2;
   --color-secondary: #00386C;
-}
 
-/* Landing Page - Sliding Blocks */
-@keyframes scrollUp {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, -50%, 0); }
-}
-
-@keyframes scrollDown {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, 50%, 0); }
-}
-
-.scroll-up {
-  animation: scrollUp 18s linear infinite;
-  will-change: transform;
-}
-
-.scroll-down {
-  animation: scrollDown 22s linear infinite;
-  will-change: transform;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .scroll-up, .scroll-down { animation: none; }
+  /* Fonts */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui;
+  
 }
