@@ -5,7 +5,7 @@ export default function LandingLogo() {
 
     // Classes
     const titleLogo = "flex items-center gap-3"
-    const logoSrc = "/images/logo-white.png"
+    const logoSrc = "/images/spartan-logo.png"
     const logoText = "text-black text-5xl text-[#0A2E5C]"
     const logoSpartanText = "text-primary"
     const logoAlt = "Logo"
